@@ -79,8 +79,8 @@ function App() {
 
   return (
     <>
-      <main className="bg-gray-900 w-full h-full text-white">
-        <section className="flex flex-col flex-wrap items-center justify-center py-4">
+      <section className="bg-gray-900 w-full h-full text-white">
+        <div className="flex flex-col flex-wrap items-center justify-center py-4">
           <img
             className="w-48 h-48 rounded-full border-4"
             src={PhotoProfile}
@@ -91,7 +91,7 @@ function App() {
             <h1 className="font-thin text-2xl text-center p-4">
               FULL STACK DEVELOPER
             </h1>
-            <h3 className="font-thin text-justify px-8 sm:px-36">
+            <p className="font-thin text-justify px-8 sm:px-36">
               Full Stack Developer con conocimientos en metodologías ágiles,
               estructuras de datos, algoritmos, frameworks y con más de 1 año
               como programador Backend especializado en PHP, Laravel, MySQL, SQL
@@ -102,37 +102,43 @@ function App() {
               crítico, flexibilidad y aprendizaje constante e independiente,
               entre otras. Me especializo en el diseño de interfaces amigables
               con el usuario.
-            </h3>
-            <div className="flex items-center justify-center px-4 py-8 space-x-6">
-              <a
-                href="https://github.com/LautaroBarrios"
-                title="Ir a GitHub"
-                target="_blank"
-                className="transform hover:scale-110 transition-transform"
-              >
-                <img className="w-16 h-16 invert" src={GitHub} alt="GitHub" />
-              </a>
-              <a
-                href="https://linkedin.com/in/lautaro-g-barrios/"
-                title="Ir a LinkedIn"
-                target="_blank"
-                className="transform hover:scale-110 transition-transform"
-              >
-                <img
-                  className="w-16 h-16 invert"
-                  src={LinkedIn}
-                  alt="LinkedIn"
-                />
-              </a>
-              <a
-                href="./CV-BarriosLautaroG.pdf"
-                title="Descargar CV"
-                download={""}
-                className="transform hover:scale-110 transition-transform"
-              >
-                <img className="w-16 h-16 invert" src={FilePDF} alt="CV" />
-              </a>
-            </div>
+            </p>
+            <ul className="flex items-center justify-center px-4 py-8 space-x-6">
+              <li>
+                <a
+                  href="https://github.com/LautaroBarrios"
+                  title="Ir a GitHub"
+                  target="_blank"
+                  className="transform hover:scale-110 transition-transform"
+                >
+                  <img className="w-16 h-16 invert" src={GitHub} alt="GitHub" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/lautaro-g-barrios/"
+                  title="Ir a LinkedIn"
+                  target="_blank"
+                  className="transform hover:scale-110 transition-transform"
+                >
+                  <img
+                    className="w-16 h-16 invert"
+                    src={LinkedIn}
+                    alt="LinkedIn"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./CV-BarriosLautaroG.pdf"
+                  title="Descargar CV"
+                  download={""}
+                  className="transform hover:scale-110 transition-transform"
+                >
+                  <img className="w-16 h-16 invert" src={FilePDF} alt="CV" />
+                </a>
+              </li>
+            </ul>
           </article>
           <div className="border h-12 w-0" />
           <article className="flex flex-col items-center justify-center">
@@ -140,86 +146,112 @@ function App() {
               Tecnologías
             </h2>
             <div className="border h-12 w-0" />
-            <div className="flex flex-wrap items-center justify-center p-4 space-x-2 space-y-2">
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={HTML}
-                alt="HTML5"
-                title="HTML5"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={CSS3}
-                alt="CSS3"
-                title="CSS3"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={TailwindCSS}
-                alt="TailwindCSS"
-                title="TailwindCSS"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={ReactSVG}
-                alt="React"
-                title="React"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={Redux}
-                alt="Redux"
-                title="Redux"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={Js}
-                alt="JavaScript"
-                title="JavaScript"
-              />
-              <div
-                className="flex w-20 h-20 rounded-full border items-center justify-center cursor-progress	transform hover:scale-110 transition-transform"
-                title="Express"
-              >
-                <h1 className="text-3xl">EX</h1>
-              </div>
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={Sequelize}
-                alt="Sequelize"
-                title="Sequelize"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={NodeSVG}
-                alt="NodeJS"
-                title="NodeJS"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={PHP}
-                alt="PHP"
-                title="PHP"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={Laravel}
-                alt="Laravel"
-                title="Laravel"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={MySQL}
-                alt="MySQL"
-                title="MySQL"
-              />
-              <img
-                className="w-20 h-20 invert cursor-progress	transform hover:scale-110 transition-transform"
-                src={SQL}
-                alt="SQL"
-                title="SQL"
-              />
-            </div>
+            <ul className="flex flex-wrap items-center justify-center p-4 space-x-2 space-y-2">
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={HTML}
+                  alt="HTML5"
+                  title="HTML5"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={CSS3}
+                  alt="CSS3"
+                  title="CSS3"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={TailwindCSS}
+                  alt="TailwindCSS"
+                  title="TailwindCSS"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={ReactSVG}
+                  alt="React"
+                  title="React"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={Redux}
+                  alt="Redux"
+                  title="Redux"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={Js}
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+              </li>
+              <li>
+                <div
+                  className="flex w-20 h-20 rounded-full border items-center justify-center cursor-progress transform hover:scale-110 transition-transform"
+                  title="Express"
+                >
+                  <h1 className="text-3xl">EX</h1>
+                </div>
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={Sequelize}
+                  alt="Sequelize"
+                  title="Sequelize"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={NodeSVG}
+                  alt="NodeJS"
+                  title="NodeJS"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={PHP}
+                  alt="PHP"
+                  title="PHP"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={Laravel}
+                  alt="Laravel"
+                  title="Laravel"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={MySQL}
+                  alt="MySQL"
+                  title="MySQL"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-20 h-20 invert cursor-progress transform hover:scale-110 transition-transform"
+                  src={SQL}
+                  alt="SQL"
+                  title="SQL"
+                />
+              </li>
+            </ul>
           </article>
           <div className="border h-12" />
           <h2 className="w-32 font-thin text-xl text-center p-4 border rounded-md">
@@ -293,7 +325,7 @@ function App() {
 
           {selectedProject === "gamesView" && (
             <>
-              <h3
+              <p
                 className={`font-thin text-justify px-8 pb-2 sm:px-36 ${
                   sliderVisible ? "block" : "hidden"
                 }`}
@@ -302,7 +334,7 @@ function App() {
                 Arcades, donde podes consultar datos de tus juegos favoritos,
                 descubrir nuevos, agregar nuevos, aplicar múltiples filtros para
                 ordenamiento y búsqueda de acuerdo a tus intereses.
-              </h3>
+              </p>
               <a
                 href="https://github.com/LautaroBarrios/GamesView"
                 target="_blank"
@@ -317,7 +349,7 @@ function App() {
           )}
           {selectedProject === "codeTutor" && (
             <>
-              <h3
+              <p
                 className={`font-thin text-justify px-8 pb-2 sm:px-36 ${
                   sliderVisible ? "block" : "hidden"
                 }`}
@@ -334,7 +366,7 @@ function App() {
                 contratación de tutores de programación de forma independiente,
                 brindando información detallada de los tutores en los perfiles,
                 reviews y testimonios de otros usuarios.
-              </h3>
+              </p>
               <a
                 href="https://www.code-tutor.dev/"
                 target="_blank"
@@ -361,12 +393,12 @@ function App() {
           </button>
           {otherProjects && (
             <div id="containerOtherProjects" className="space-y-2">
-              <h2 className="font-thin text-justify px-8 p-2 sm:px-36 underline">
+              <h2 className="font-thin text-justify px-8 p-2 sm:px-36 underline text-red-500">
                 IMPORTANTE: debido a que los siguientes proyectos manejan
                 información delicada y privada no hay links de acceso
                 disponibles para el público.
               </h2>
-              <h3 className="font-thin text-justify px-8 p-2 sm:px-36">
+              <p className="font-thin text-justify px-8 p-2 sm:px-36">
                 Sistema de gestión de empleados y contratos - Municipalidad de
                 la Calera, Córdoba, Argentina (2022).
                 <br />
@@ -375,11 +407,11 @@ function App() {
                 automáticamente de manera óptima,eficaz y rápida. También
                 elaboré la base de datos y realice la migración a partir de un
                 documento que poseía los datos de los mismos.
-              </h3>
+              </p>
             </div>
           )}
-        </section>
-      </main>
+        </div>
+      </section>
     </>
   );
 }
